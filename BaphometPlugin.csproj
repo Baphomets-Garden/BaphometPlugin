@@ -37,80 +37,83 @@
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="0Harmony">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\0Harmony.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\0Harmony.dll</HintPath>
         </Reference>
         <Reference Include="Assembly-CSharp">
-          <HintPath>..\..\KryptoneCore\KryptoneCore\bin\Debug\Assembly-CSharp-Publicized.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\Assembly-CSharp-Publicized.dll</HintPath>
         </Reference>
         <Reference Include="Assembly-CSharp-firstpass">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\Assembly-CSharp-firstpass.dll</HintPath>
-        </Reference>
-        <Reference Include="BouncyCastle.Cryptography">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\BouncyCastle.Cryptography.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\Assembly-CSharp-firstpass.dll</HintPath>
         </Reference>
         <Reference Include="CommandSystem.Core">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\CommandSystem.Core.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\CommandSystem.Core.dll</HintPath>
         </Reference>
         <Reference Include="DSharp4Webhook">
-          <HintPath>C:\Users\usuario\Downloads\DSharp4Webhook.dll</HintPath>
+          <HintPath>..\..\Downloads\DSharp4Webhook.dll</HintPath>
         </Reference>
         <Reference Include="Mirror">
-          <HintPath>..\..\KryptoneCore\KryptoneCore\bin\Debug\Mirror-Publicized.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\Mirror-Publicized.dll</HintPath>
         </Reference>
         <Reference Include="Neuron.Core">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\Neuron.Core.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\Neuron.Core.dll</HintPath>
         </Reference>
         <Reference Include="Neuron.Modules.Commands">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\Neuron.Modules.Commands.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\Neuron.Modules.Commands.dll</HintPath>
         </Reference>
         <Reference Include="Neuron.Modules.Configs">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\Neuron.Modules.Configs.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\Neuron.Modules.Configs.dll</HintPath>
         </Reference>
         <Reference Include="Neuron.Modules.Patcher">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\Neuron.Modules.Patcher.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\Neuron.Modules.Patcher.dll</HintPath>
         </Reference>
         <Reference Include="Ninject">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\Ninject.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\Ninject.dll</HintPath>
         </Reference>
         <Reference Include="NorthwoodLib">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\NorthwoodLib.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\NorthwoodLib.dll</HintPath>
         </Reference>
         <Reference Include="NVorbis">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\NVorbis.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\NVorbis.dll</HintPath>
         </Reference>
         <Reference Include="PluginAPI">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\PluginAPI.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\PluginAPI.dll</HintPath>
         </Reference>
         <Reference Include="Pooling">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\Pooling.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\Pooling.dll</HintPath>
         </Reference>
         <Reference Include="SYML">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\SYML.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\SYML.dll</HintPath>
         </Reference>
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
         <Reference Include="System.Data"/>
         <Reference Include="System.Xml"/>
         <Reference Include="UnityEngine.AnimationModule">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\UnityEngine.AnimationModule.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\UnityEngine.AnimationModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AssetBundleModule">
+          <HintPath>..\Universe\UniverseModule\bin\Debug\UnityEngine.AssetBundleModule.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.AudioModule">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\UnityEngine.AudioModule.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\UnityEngine.AudioModule.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.CoreModule">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\UnityEngine.CoreModule.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ParticleSystemModule">
+          <HintPath>..\Universe\UniverseModule\bin\Debug\UnityEngine.ParticleSystemModule.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.PhysicsModule">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\UnityEngine.PhysicsModule.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\UnityEngine.PhysicsModule.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.UnityWebRequestModule">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\UnityEngine.UnityWebRequestModule.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\UnityEngine.UnityWebRequestModule.dll</HintPath>
         </Reference>
         <Reference Include="Universe">
           <HintPath>C:\Users\mrnex\RiderProjects\Universe\UniverseModule\bin\Debug\Universe.dll</HintPath>
         </Reference>
         <Reference Include="YamlDotNet">
-          <HintPath>C:\Users\usuario\RiderProjects\Universe\UniverseModule\bin\Debug\YamlDotNet.dll</HintPath>
+          <HintPath>..\Universe\UniverseModule\bin\Debug\YamlDotNet.dll</HintPath>
         </Reference>
     </ItemGroup>
     <ItemGroup>
