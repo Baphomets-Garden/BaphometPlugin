@@ -44,7 +44,7 @@ public class AfkCheckerComponent : MonoBehaviour
             
         if (_player.CurrentRole.Team != Team.Dead && _player.RoleType != RoleTypeId.Scp079 && _player.RoleType != RoleTypeId.Filmmaker && Universe.GetManagedClass<RoundManager>().RoundIsActive && _lastPos == pos && _lastRot == rot)
         {
-            if (WhitelistedRanks.Contains(_player.UniverseGroup.Badge) || WhitelistedUserIds.Contains(_player.UserId))
+            if (WhitelistedRanks.Contains(_player.UniverseGroup.Badge))
             {
                 _afkTime = 0;
                 return;
@@ -88,11 +88,11 @@ public class AfkCheckerComponent : MonoBehaviour
 
     private static readonly List<string> WhitelistedRanks = 
     [
-        
-    ];
-    
-    private static readonly List<string> WhitelistedUserIds = 
-    [
-        
+        "Overlord",
+        "Garden Developer",
+        "Overseer",
+        "Council",
+        "Administrator",
+        "Moderator"
     ];
 }

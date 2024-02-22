@@ -8,10 +8,7 @@ public static class PluginExtensions
 {
     private static readonly Dictionary<UniversePlayer, HudRenderer> Hubs = new();
 
-    public static void ClearHubs()
-    {
-        Hubs.Clear();
-    }
+    public static void ClearHubs() => Hubs.Clear();
     
     public static void StartCustomManager(this UniversePlayer player) => Hubs.Add(player, player.gameObject.AddComponent<HudRenderer>());
     
@@ -20,9 +17,7 @@ public static class PluginExtensions
     public static void ClearCustomManagers()
     {
         foreach (var hub in Hubs)
-        {
             hub.Key.RemoveCustomManager();
-        }
     }
     
     public static void SendHudHint(this UniversePlayer player, ScreenZone zone, string message, float duration = 7)
