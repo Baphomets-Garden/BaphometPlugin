@@ -22,9 +22,9 @@ public class DisconnectReplacerManager
 
     private void OnLeave(LeaveEvent ev)
     {
-        if (!_roundManager.RoundIsActive || _roundManager.RoundEnded || _roundManager.RoundRestarting)
+        if (!_roundManager.RoundIsActive || _roundManager.RoundEnded)
             return;
-        
+
         if (ev.Player.RoleType is RoleTypeId.Spectator or RoleTypeId.Overwatch or RoleTypeId.None or RoleTypeId.Tutorial)
             return;
         
