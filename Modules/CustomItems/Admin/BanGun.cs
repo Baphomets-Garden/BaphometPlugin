@@ -7,7 +7,7 @@ namespace BaphometPlugin.Modules.CustomItems.Admin;
 
 [AutomaticExecution]
 [Item(Id = 201, Name = "Ban Gun", BasedItemType = ItemType.GunCOM15)]
-public class BanGun(PlayerEvents player, ItemEvents item) : CustomItemHandler(item, player)
+public class BanGun(PlayerEvents player, ItemEvents item) : UniverseCustomItem(item, player)
 {
     private const long BanTime = 60;
 
