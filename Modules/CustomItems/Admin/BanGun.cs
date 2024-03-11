@@ -9,21 +9,23 @@ namespace BaphometPlugin.Modules.CustomItems.Admin;
 [Item(Id = 201, Name = "Ban Gun", BasedItemType = ItemType.GunCOM15)]
 public class BanGun(PlayerEvents player, ItemEvents item) : UniverseCustomItem(item, player)
 {
+    private readonly PlayerEvents _player1 = player;
+    
     private const long BanTime = 60;
 
     private const string BanReason = "Trolled";
     
     public override void HookEvents()
     {
-        player.Damage.Subscribe(OnDamage);
-        player.DropItem.Subscribe(OnDropItem);
+        _player1.Damage.Subscribe(OnDamage);
+        _player1.DropItem.Subscribe(OnDropItem);
         base.HookEvents();
     }
 
     public override void UnHookEvents()
     {
-        player.Damage.Unsubscribe(OnDamage);
-        player.DropItem.Unsubscribe(OnDropItem);
+        _player1.Damage.Unsubscribe(OnDamage);
+        _player1.DropItem.Unsubscribe(OnDropItem);
         base.UnHookEvents();
     }
 
