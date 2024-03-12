@@ -138,7 +138,8 @@
         <Compile Include="Modules\CustomHud\ScreenZone.cs" />
         <Compile Include="Modules\CustomItems\Admin\BanGun.cs" />
         <Compile Include="Modules\CustomItems\LunchBox.cs" />
-        <Compile Include="Modules\CustomItems\Scp714.cs" />
+        <Compile Include="Modules\CustomItems\Scp714\Scp714.cs" />
+        <Compile Include="Modules\CustomItems\Scp714\Scp714RecipeProcessor.cs" />
         <Compile Include="Modules\DisconnectReplacer\DisconnectReplacerManager.cs" />
         <Compile Include="Modules\DisconnectReplacer\PlayerReplacer.cs" />
         <Compile Include="Modules\DiscordBot\DiscordBotManager.cs" />

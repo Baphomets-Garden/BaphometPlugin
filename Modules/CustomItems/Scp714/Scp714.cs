@@ -5,7 +5,7 @@ using UniverseModule.Enums;
 using UniverseModule.Events;
 using UniverseModule.Generic.Core;
 
-namespace BaphometPlugin.Modules.CustomItems;
+namespace BaphometPlugin.Modules.CustomItems.Scp714;
 
 [AutomaticExecution]
 [Item(Id = 202, Name = "SCP-714", BasedItemType = ItemType.Coin)]
