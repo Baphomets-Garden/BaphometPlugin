@@ -14,7 +14,7 @@ namespace BaphometPlugin.Modules.CustomItems.Scp427;
 [Scp914Processor(ReplaceHandlers = [35])]
 public class Scp427RecipeProcessor : IUniverse914Processor
 {
-    public void CreateUpgradedItem(UniverseItem item, Scp914KnobSetting setting, Vector3 position = new Vector3())
+    public void CreateUpgradedItem(UniverseItem item, Scp914KnobSetting setting, Vector3 position = new())
     {
         var chance = Random.Range(0, 100);
 
