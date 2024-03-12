@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Threading;
 using System.Threading.Tasks;
 using BaphometPlugin.Modules.CustomHud;
 using PlayerRoles;
@@ -17,16 +16,12 @@ public class Scp427Role : UniverseRole
     public override void SpawnPlayer(IUniverseRole previousRole = null, bool spawnLite = false)
     {
         Player.SendHudHint(ScreenZone.Center, RoleDescription, 6f);
-
-#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
-        SetupRole(Player, CancellationToken.Token);
-#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
+        
+        Task.Run(() => SetupRole(Player));
     }
 
     public override void DeSpawn(DeSpawnReason reason)
     {
-        CancellationToken.Cancel();
-        
         Player.Scale = Vector3.one;
         Player.MaxHealth = 100;
         Player.NicknameSync.Network_customPlayerInfoString = string.Empty;
@@ -54,21 +49,19 @@ public class Scp427Role : UniverseRole
             (uint)Team.SCPs
         ];
     }
-    
-    private static readonly CancellationTokenSource CancellationToken = new();
 
-    private static async Task SetupRole(UniversePlayer player, CancellationToken token)
+    private static async Task SetupRole(UniversePlayer player)
     {
-        await Task.Delay(2000, token);
+        await Task.Delay(2000);
 
         player.NicknameSync.Network_customPlayerInfoString = "<size=25><color=#C50000>SCP 427-1</color></size>";
         
-        await Task.Delay(3000, token);
+        await Task.Delay(3000);
 
         player.Health = 700;
         player.MaxHealth = 700;
         player.Scale = new Vector3(1.2f, 1.2f, 1.2f);
 
-        CancellationToken.Cancel();
+        await Task.CompletedTask;
     }
 }
