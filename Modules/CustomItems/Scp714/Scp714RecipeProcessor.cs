@@ -44,7 +44,7 @@ public class Scp714RecipeProcessor : IUniverse914Processor
             case ItemState.ServerSideOnly:
                 break;
             default:
-                throw new ArgumentOutOfRangeException();
+                throw new ArgumentOutOfRangeException(nameof(state), "Invalid item state.");
         }
     }
 }
