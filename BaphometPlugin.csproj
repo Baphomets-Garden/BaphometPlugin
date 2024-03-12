@@ -139,6 +139,7 @@
         <Compile Include="Modules\CustomItems\Admin\BanGun.cs" />
         <Compile Include="Modules\CustomItems\LunchBox.cs" />
         <Compile Include="Modules\CustomItems\Scp427\Scp427.cs" />
+        <Compile Include="Modules\CustomItems\Scp427\Scp427RecipeProcessor.cs" />
         <Compile Include="Modules\CustomItems\Scp427\Scp427Role.cs" />
         <Compile Include="Modules\CustomItems\Scp714\Scp714.cs" />
         <Compile Include="Modules\CustomItems\Scp714\Scp714RecipeProcessor.cs" />
