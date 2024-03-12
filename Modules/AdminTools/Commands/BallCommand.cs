@@ -15,7 +15,7 @@ namespace BaphometPlugin.Modules.AdminTools.Commands;
     CommandName = "Ball",
     Aliases = [],
     Description = "Spawns SCP-018 in the selected players position.",
-    Permission = "serpents.remoteadmin.commands",
+    Permission = "baphomet.remoteadmin.commands",
     Platforms = [CommandPlatform.RemoteAdmin, CommandPlatform.ServerConsole],
     Parameters = ["Players", "Amount"]
 )]

@@ -15,7 +15,7 @@ namespace BaphometPlugin.Modules.AdminTools.Commands;
 // ReSharper disable ClassNeverInstantiated.Global
 
 [AutomaticExecution]
-[RemoteAdminCommand(CommandName = "Jail", Aliases = [], Description = "Jails a player", Parameters = ["Players"], Permission = "serpents.remoteadmin.commands", Platforms = [CommandPlatform.RemoteAdmin])]
+[RemoteAdminCommand(CommandName = "Jail", Aliases = [], Description = "Jails a player", Parameters = ["Players"], Permission = "baphomet.remoteadmin.commands", Platforms = [CommandPlatform.RemoteAdmin])]
 public class JailCommand : UniverseCommand
 {
     [Inject]

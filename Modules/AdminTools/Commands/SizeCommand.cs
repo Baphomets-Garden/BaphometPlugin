@@ -15,7 +15,7 @@ namespace BaphometPlugin.Modules.AdminTools.Commands;
     CommandName = "Size",
     Aliases = ["Scale"],
     Description = "Changes the Size of the selected players.",
-    Permission = "serpents.remoteadmin.commands",
+    Permission = "baphomet.remoteadmin.commands",
     Platforms = [CommandPlatform.RemoteAdmin, CommandPlatform.ServerConsole],
     Parameters = ["Players", "X Size", "Y Size", "Z Size"]
 )]

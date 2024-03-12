@@ -10,7 +10,7 @@ namespace BaphometPlugin.Modules.PointSystem;
 // ReSharper disable ClassNeverInstantiated.Global
 
 [AutomaticExecution]
-[RemoteAdminCommand(CommandName = "RemovePoints", Aliases = [], Description = "Remove Mvp Points from a specific player", Parameters = ["Player", "Points Amount"], Permission = "serpents.remoteadmin.points", Platforms = [CommandPlatform.RemoteAdmin])]
+[RemoteAdminCommand(CommandName = "RemovePoints", Aliases = [], Description = "Remove Mvp Points from a specific player", Parameters = ["Player", "Points Amount"], Permission = "baphomet.remoteadmin.points", Platforms = [CommandPlatform.RemoteAdmin])]
 public class RemovePointsCommand : UniverseCommand
 {
     [Inject]
