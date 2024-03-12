@@ -33,14 +33,14 @@ public class Scp714(ItemEvents items, PlayerEvents player) : UniverseCustomItem(
     {
         if (ev.Item.Id != 202) return;
         
-        ev.Player.SendHudHint(ScreenZone.CenterBottom, "<b>Picked up <color=#F00000>SCP-714 \"The Jade Ring\"</color> !\nYou can survive 1 attack from SCP-049 while wearing this in the hand!</b>", 6f);
+        ev.Player.SendHudHint(ScreenZone.CenterBottom, "<b>Picked up <color=#F00000>SCP-714 \"The Jade Ring\"</color> !\nYou can survive 1 attack from SCP-049 (Only works when held)!</b>", 6f);
     }
     
     private void OnChangeItem(ChangeItemEvent ev)
     {
         if (ev.NewItem.Id != 202) return;
 
-        ev.Player.SendHudHint(ScreenZone.CenterBottom, "<b>This is <color=#F00000>SCP-714 \"The Jade Ring\"</color> !\nYou can survive 1 attack from SCP-049 while wearing this in the hand!</b>", 6f);
+        ev.Player.SendHudHint(ScreenZone.CenterBottom, "<b>This is <color=#F00000>SCP-714 \"The Jade Ring\"</color> !\nYou can survive 1 attack from SCP-049 (Only works when held)!</b>", 6f);
     }
 
     private void OnDamage(DamageEvent ev)

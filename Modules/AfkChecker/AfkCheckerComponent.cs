@@ -44,7 +44,7 @@ public class AfkCheckerComponent : MonoBehaviour
             
         if (_player.CurrentRole.Team != Team.Dead && _player.RoleType != RoleTypeId.Scp079 && _player.RoleType != RoleTypeId.Filmmaker && Universe.GetManagedClass<RoundManager>().RoundIsActive && _lastPos == pos && _lastRot == rot)
         {
-            if (WhitelistedRanks.Contains(_player.UniverseGroup.Badge))
+            if (WhitelistedRanks.Contains(_player.Group.Badge))
             {
                 _afkTime = 0;
                 return;

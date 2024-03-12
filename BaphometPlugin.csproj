@@ -138,6 +138,8 @@
         <Compile Include="Modules\CustomHud\ScreenZone.cs" />
         <Compile Include="Modules\CustomItems\Admin\BanGun.cs" />
         <Compile Include="Modules\CustomItems\LunchBox.cs" />
+        <Compile Include="Modules\CustomItems\Scp427\Scp427.cs" />
+        <Compile Include="Modules\CustomItems\Scp427\Scp427Role.cs" />
         <Compile Include="Modules\CustomItems\Scp714\Scp714.cs" />
         <Compile Include="Modules\CustomItems\Scp714\Scp714RecipeProcessor.cs" />
         <Compile Include="Modules\DisconnectReplacer\DisconnectReplacerManager.cs" />
@@ -153,9 +155,6 @@
         <Compile Include="Modules\ScpVoiceChat\ScpVoiceChatModule.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
         <Compile Include="BaphometMain.cs" />
-    </ItemGroup>
-    <ItemGroup>
-      <Folder Include="Modules\CustomItems\Scp427\" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
