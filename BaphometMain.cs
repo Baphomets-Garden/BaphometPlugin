@@ -10,6 +10,7 @@ using BaphometPlugin.Modules.DiscordBot;
 using BaphometPlugin.Modules.Lobby;
 using BaphometPlugin.Modules.PointSystem;
 using BaphometPlugin.Modules.RespawnTimer;
+using BaphometPlugin.Modules.Scp1162;
 using BaphometPlugin.Modules.ScpVoiceChat;
 using HarmonyLib;
 using MEC;
@@ -49,6 +50,8 @@ public class BaphometMain : UniversePlugin<Config, Translation>
     
     public DiscordLogsHandler DiscordLogsHandler { get; private set; }
     
+    public Scp1162Module Scp1162Module { get; private set; }
+    
     public override void InitializePlugin()
     {
         ScpVoiceChatModule = Universe.GetManagedClass<ScpVoiceChatModule>();
@@ -61,6 +64,7 @@ public class BaphometMain : UniversePlugin<Config, Translation>
         BulletHoleCapModule = Universe.GetManagedClass<BulletHoleCapModule>();
         AfkHandler = Universe.GetManagedClass<AfkHandler>();
         DiscordLogsHandler = Universe.GetManagedClass<DiscordLogsHandler>();
+        Scp1162Module = Universe.GetManagedClass<Scp1162Module>();
 
         BanLogController = Universe.GetManagedClass<BanLogController>();
         
@@ -90,6 +94,7 @@ public class BaphometMain : UniversePlugin<Config, Translation>
         AfkHandler = null;
         DiscordLogsHandler = null;
         BanLogController = null;
+        Scp1162Module = null;
         DiscordBotManager.BotTask.Dispose();
         Timing.KillCoroutines("Logs_QueueManager");
         
