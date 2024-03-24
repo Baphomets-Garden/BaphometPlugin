@@ -40,6 +40,7 @@ public class LobbyManager
         playerEvents.Join.Subscribe(OnJoin);
         playerEvents.Speak.Subscribe(OnSpeak);
         playerEvents.DoorInteract.Subscribe(OnDoorInteract);
+        playerEvents.LockerUse.Subscribe(OnLockerUse);
         playerEvents.CallVanillaElevator.Subscribe(OnCallElevator);
     }
 
@@ -118,6 +119,12 @@ public class LobbyManager
     }
     
     private void OnCallElevator(CallVanillaElevatorEvent ev)
+    {
+        if (!_roundManager.RoundIsActive && !_roundManager.RoundEnded)
+            ev.Allow = false;
+    }
+    
+    private void OnLockerUse(LockerUseEvent ev)
     {
         if (!_roundManager.RoundIsActive && !_roundManager.RoundEnded)
             ev.Allow = false;
